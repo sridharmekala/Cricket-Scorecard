@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cricket Scorecard | MSD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <h1>🏏 Cricket Scorecard</h1>
+        </header>
+
+        <section class="scoreboard">
+            <div class="score">
+                <h2 id="scoreDisplay">0 / 0</h2>
+                <p id="oversDisplay">Overs: 0.0</p>
+            </div>
+        </section>
+
+        <section class="buttons">
+            <button onclick="addRun(0)">DOT</button>
+            <button onclick="addRun(1)">1</button>
+            <button onclick="addRun(2)">2</button>
+            <button onclick="addRun(3)">3</button>
+            <button onclick="addRun(4)" class="four">4</button>
+            <button onclick="addRun(6)" class="six">6</button>
+            <button onclick="addWide()" class="wide">WIDE</button>
+            <button onclick="addWicket()" class="wicket">WICKET</button>
+            <button onclick="undoLast()" class="undo">UNDO</button>
+            <button onclick="resetMatch()" class="reset">RESET</button>
+        </section>
+
+        <section class="history">
+            <h3>Ball History</h3>
+            <div id="historyDisplay"></div>
+        </section>
+
+        <div id="toast" class="toast"></div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>🏏 Cricket Scorecard</p>
+                <p>Developed by <span class="dev">@MSD18</span></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
